@@ -79,10 +79,3 @@ def task_2(accruals, payments):
             table[payment] = accrual
             accruals = accruals.exclude(id=accrual.id)
     return (table, payments_accrualless)
-
-# accounts = Account.objects.all()
-# fields = task_1(accounts)
-# print(fields)
-# print('__________________________')
-# for field in fields:
-#     print(field)
